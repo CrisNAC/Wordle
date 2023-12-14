@@ -61,10 +61,10 @@ function intento(){
         //Decremento del contador
         intentos--;
         if(INTENTO===palabra){
-            terminar("<h1>GANASTE</h1>");
+            terminar("<h1>GANASTE😎👌</h1>");
             return;
-        }else if(intento==0){
-            terminar("<h1>PERDISTE</h1>");
+        }else if(intentos==0){
+            terminar("<h1>PERDISTE🥲👎</h1>");
         }
     }
     TEXTO.value="";//Vacio el input
