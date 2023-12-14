@@ -26,7 +26,7 @@ TEXTO.addEventListener("change", intento);
 
 //Funcion donde se obtiene el valor del input
 function leerIntento(){
-    let valor=TEXTO.value.toUpperCase();
+    let valor=TEXTO.value.toUpperCase().replace(/\s/g, '');
     return valor;    
 }
 
@@ -47,10 +47,10 @@ function intento(){
             SPAN.className="letra";
             if(INTENTO[i]===palabra[i]){
                 SPAN.innerHTML=INTENTO[i];
-                SPAN.style.background="green";
+                SPAN.style.background="#29bf12";
             }else if(palabra.includes(INTENTO[i])){
                 SPAN.innerHTML=INTENTO[i];
-                SPAN.style.background="yellow";
+                SPAN.style.background="#ffe169";
             }else{
                 SPAN.innerHTML=INTENTO[i];
                 SPAN.style.background="grey";
