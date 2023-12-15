@@ -45,14 +45,19 @@ button:active{transform: scale(0.95);}
 }
 
 .letra{
-    border: 1px solid black;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    /*border: 1px solid black;*/
+    border: none;
     border-radius: 5px;
-    padding: 3px;
     margin: 3px;
-    min-width: 30px;
-    min-height: 20px;
-    text-align: center;
-    display: inline-block;
+    /*text-align: center;*/
+    align-items: center;
+    justify-content: center;
 }
 
 .row{
